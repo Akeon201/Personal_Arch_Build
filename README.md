@@ -92,5 +92,9 @@ Just configure within kde settings.
 ## TIPS
 ```shell
 # remove package
-pacman -Rsun [package]
+sudo pacman -Rsun [package]
+# install package
+sudo pacman -S [package]
+# install aur package
+yay -S [package]
 ```
