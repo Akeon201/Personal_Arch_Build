@@ -79,6 +79,13 @@ sudo systemctl enable paccache.timer
 sudo systemctl start paccache.timer
 ```
 
+### fstrimer timer
+Might already be enabled, check with 'systemctl list-timers'
+```shell
+sudo systemctl enable fstrimer.timer
+sudo systemctl start fstrimer.timer
+```
+
 ### ufw firewall
 ```shell
 sudo nano /etc/pacman.conf
