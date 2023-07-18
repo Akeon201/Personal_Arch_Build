@@ -118,11 +118,20 @@ yay -S tor-browser
 
 https://aur.archlinux.org/dropbox.git
 ## TIPS
+# Pacman and yay
 ```shell
 # remove package
 sudo pacman -Rsun [package]
+
 # install package
 sudo pacman -S [package]
+
+# update download fresh package databases from the server (-yy to force a refresh even if up to date)
+sudo pacman -Syy
+
+# upgrade installed packages (-uu enables downgrades) (use y to be safe in case forgot above step)
+sudo pacman -Syu
+
 # install aur package
 yay -S [package]
 ```
