@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop
 ```
 
 ### Pacman
@@ -88,6 +88,9 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
 
 ### Ufw firewall
 Just configure within kde settings.
+
+### Telegram
+Just configure settings.
 
 ### Chatgpt gui
 https://aur.archlinux.org/chatgpt-desktop-bin.git
