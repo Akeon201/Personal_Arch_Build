@@ -38,6 +38,14 @@ sudo systemctl mask systemd-rfkill.socket
 sudo tlp start
 ```
 
+### yay
+https://aur.archlinux.org/yay.git
+```shell
+makepkg -s
+pacman -U yay-XXXXXXXXXXXXXX.pkg.tar.zst
+rm -rf yay/
+```
+
 ### ufw firewall
 ```shell
 sudo nano /etc/pacman.conf
