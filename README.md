@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp
 ```
 
 ### Pacman
@@ -27,6 +27,15 @@ sudo reflector --country "United States" --verbose --age 24 --protocol https --s
 sudo nano /etc/xdg/reflector/reflector.conf
 systemctl enable reflector.timer
 systemctl start reflector.timer
+```
+
+### tlp power savings
+```shell
+sudo systemctl enable tlp.serive
+sudo systemctl start tlp.serive
+sudo systemctl mask systemd-rfkill.service
+sudo systemctl mask systemd-rfkill.socket
+sudo tlp start
 ```
 
 ### ufw firewall
