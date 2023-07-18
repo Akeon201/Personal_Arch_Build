@@ -89,6 +89,12 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
 ### Ufw firewall
 Just configure within kde settings.
 
+### Chatgpt gui
+https://aur.archlinux.org/chatgpt-desktop-bin.git
+```shell
+yay -S chatgpt-desktop-bin
+```
+
 ## TIPS
 ```shell
 # remove package
