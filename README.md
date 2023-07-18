@@ -110,6 +110,12 @@ https://aur.archlinux.org/dropbox.git
 yay -S dropbox
 ```
 
+### Tor broswer
+https://aur.archlinux.org/tor-browser.git
+```shell
+yay -S tor-browser
+```
+
 https://aur.archlinux.org/dropbox.git
 ## TIPS
 ```shell
