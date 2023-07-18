@@ -104,6 +104,13 @@ https://aur.archlinux.org/visual-studio-code-bin.git
 yay -S visual-studio-code-bin
 ```
 
+### Dropbox
+https://aur.archlinux.org/dropbox.git
+```shell
+yay -S dropbox
+```
+
+https://aur.archlinux.org/dropbox.git
 ## TIPS
 ```shell
 # remove package
