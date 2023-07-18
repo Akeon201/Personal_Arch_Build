@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp yay
 ```
 
 ### Pacman
@@ -45,6 +45,28 @@ makepkg -s
 pacman -U yay-XXXXXXXXXXXXXX.pkg.tar.zst
 rm -rf yay/
 ```
+
+
+### discord
+To disable the update check, add the following to ~/.config/discord/settings.json: 
+```shell
+~/.config/discord/settings.json
+"SKIP_HOST_UPDATE": true
+```
+
+Note that you will need to add an extra comma after the "WINDOW_BOUND" array due to JSON requirements, i.e.: 
+```shell
+{ 
+  "IS_MAXIMIZED": true,
+  "IS_MINIMIZED": false,
+  "WINDOW_BOUNDS": {
+    "x": 2240,
+    "y": 219,
+    "width": 1280,
+    "height": 720
+  },
+"SKIP_HOST_UPDATE": true
+}```
 
 ### ufw firewall
 ```shell
