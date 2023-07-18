@@ -56,6 +56,7 @@ To disable the update check, add the following to ~/.config/discord/settings.jso
 
 Note that you will need to add an extra comma after the "WINDOW_BOUND" array due to JSON requirements, i.e.: 
 ```shell
+# If settings.json file is not generated, start discord, resize window, close.
 { 
   "IS_MAXIMIZED": true,
   "IS_MINIMIZED": false,
@@ -66,7 +67,8 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
     "height": 720
   },
 "SKIP_HOST_UPDATE": true
-}```
+}
+```
 
 ### ufw firewall
 ```shell
