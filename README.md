@@ -116,7 +116,12 @@ https://aur.archlinux.org/tor-browser.git
 yay -S tor-browser
 ```
 
-https://aur.archlinux.org/dropbox.git
+### Bluetooth
+```shell
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+```
+
 ## TIPS
 # Pacman and yay
 ```shell
