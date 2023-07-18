@@ -89,12 +89,6 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
 ### Ufw firewall
 Just configure within kde settings.
 
-### Powertop
-```shell
-sudo powertop --calibrate --html
-sudo powertop --auto-tune
-```
-
 ## TIPS
 ```shell
 # remove package
