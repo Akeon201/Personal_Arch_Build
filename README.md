@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp yay
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp yay discord pacman-contrib
 ```
 
 ### Pacman
@@ -68,6 +68,15 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
   },
 "SKIP_HOST_UPDATE": true
 }
+```
+
+### paccache
+Keeps most recent 3 cache versions
+```shell
+sudo pacman -S pacman-contrib
+paccache -r
+sudo systemctl enable paccache.timer
+sudo systemctl start paccache.timer
 ```
 
 ### ufw firewall
