@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition
 ```
 
 ### Pacman
