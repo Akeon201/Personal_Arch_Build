@@ -98,6 +98,12 @@ https://aur.archlinux.org/chatgpt-desktop-bin.git
 yay -S chatgpt-desktop-bin
 ```
 
+### Vs code
+https://aur.archlinux.org/visual-studio-code-bin.git
+```shell
+yay -S visual-studio-code-bin
+```
+
 ## TIPS
 ```shell
 # remove package
