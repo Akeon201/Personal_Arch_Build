@@ -19,6 +19,22 @@ Parallel downloads, colors
 sudo nano /etc/pacman.conf
 ```
 
+### paccache
+Keeps most recent 3 cache versions
+```shell
+sudo pacman -S pacman-contrib
+paccache -r
+sudo systemctl enable paccache.timer
+sudo systemctl start paccache.timer
+```
+
+### fstrimer timer
+Might already be enabled, check with 'systemctl list-timers'
+```shell
+sudo systemctl enable fstrimer.timer
+sudo systemctl start fstrimer.timer
+```
+
 ### Reflector
 Take command and put into config file for automatic updating.
 ```shell
@@ -68,22 +84,6 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
   },
 "SKIP_HOST_UPDATE": true
 }
-```
-
-### paccache
-Keeps most recent 3 cache versions
-```shell
-sudo pacman -S pacman-contrib
-paccache -r
-sudo systemctl enable paccache.timer
-sudo systemctl start paccache.timer
-```
-
-### fstrimer timer
-Might already be enabled, check with 'systemctl list-timers'
-```shell
-sudo systemctl enable fstrimer.timer
-sudo systemctl start fstrimer.timer
 ```
 
 ### ufw firewall
