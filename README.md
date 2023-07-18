@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp yay discord pacman-contrib
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib powertop
 ```
 
 ### Pacman
@@ -19,7 +19,7 @@ Parallel downloads, colors
 sudo nano /etc/pacman.conf
 ```
 
-### paccache
+### Paccache
 Keeps most recent 3 cache versions
 ```shell
 sudo pacman -S pacman-contrib
@@ -28,7 +28,7 @@ sudo systemctl enable paccache.timer
 sudo systemctl start paccache.timer
 ```
 
-### fstrimer timer
+### Fstrimer timer
 Might already be enabled, check with 'systemctl list-timers'
 ```shell
 sudo systemctl enable fstrimer.timer
@@ -45,7 +45,7 @@ systemctl enable reflector.timer
 systemctl start reflector.timer
 ```
 
-### tlp power savings
+### Tlp power savings
 ```shell
 sudo systemctl enable tlp.serive
 sudo systemctl start tlp.serive
@@ -54,7 +54,7 @@ sudo systemctl mask systemd-rfkill.socket
 sudo tlp start
 ```
 
-### yay
+### Yay
 https://aur.archlinux.org/yay.git
 ```shell
 makepkg -s
@@ -63,7 +63,7 @@ rm -rf yay/
 ```
 
 
-### discord
+### Discord
 To disable the update check, add the following to ~/.config/discord/settings.json: 
 ```shell
 ~/.config/discord/settings.json
@@ -86,7 +86,13 @@ Note that you will need to add an extra comma after the "WINDOW_BOUND" array due
 }
 ```
 
-### ufw firewall
+### Ufw firewall
+Just configure within kde settings.
+
+### C  pu auto-frequency
 ```shell
-sudo nano /etc/pacman.conf
+```
+
+### Powertop
+```shell
 ```
