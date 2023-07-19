@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird
 ```
 
 ### Pacman
@@ -145,4 +145,8 @@ sudo pacman -Syu
 
 # install aur package
 yay -S [package]
+
+# extract archive
+tar -xvf <filename>.tar.bz2
+
 ```
