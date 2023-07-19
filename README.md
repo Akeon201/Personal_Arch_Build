@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish
 ```
 
 ### Pacman
@@ -120,6 +120,12 @@ yay -S tor-browser
 ```shell
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
+```
+
+### Fish
+Better terminal. Keep scripting to bash.
+```shell
+sudo pacman -S fish
 ```
 
 ## TIPS
