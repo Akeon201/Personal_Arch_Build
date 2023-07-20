@@ -145,14 +145,19 @@ sudo pacman -Syu
 
 # install aur package
 yay -S [package]
+```
 
+# Archives
+```shell
 # extract archive
 tar -xvf <filename>.tar.bz2
+```
 
+# Ip and ports
+```shell
 # show ip
 ip
 
 # show active ports
 ss
-
 ```
