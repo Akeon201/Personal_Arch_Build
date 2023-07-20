@@ -132,10 +132,10 @@ sudo pacman -S fish
 # Pacman and yay
 ```shell
 # remove package
-sudo pacman -Rsun [package]
+sudo pacman -Rsun <package>
 
 # install package
-sudo pacman -S [package]
+sudo pacman -S <package>
 
 # update download fresh package databases from the server (-yy to force a refresh even if up to date)
 sudo pacman -Syy
@@ -144,7 +144,7 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 # install aur package
-yay -S [package]
+yay -S <package>
 ```
 
 # Archives
