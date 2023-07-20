@@ -149,4 +149,10 @@ yay -S [package]
 # extract archive
 tar -xvf <filename>.tar.bz2
 
+# show ip
+ip
+
+# show active ports
+ss
+
 ```
