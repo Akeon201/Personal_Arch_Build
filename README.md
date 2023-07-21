@@ -10,7 +10,7 @@ archinstall --script guided
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy
 ```
 
 ### Pacman
@@ -127,6 +127,13 @@ Better terminal. Keep scripting to bash.
 ```shell
 sudo pacman -S fish
 ```
+
+### Firefox alt key fix
+You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config page to prevent opening the menu when holding down the Alt key. This may require to close and restart Firefox.
+
+    ui.key.menuAccessKeyFocuses = false 
+    
+You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue. 
 
 ## TIPS
 # Pacman and yay
