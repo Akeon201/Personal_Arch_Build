@@ -136,6 +136,7 @@ You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config pa
 You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue.
 
 ### Dnscrypt-proxy
+    server_names = ['ahadns-doh-nl', 'adguard-dns-doh', 'controld-block-malware', 'dnsforge.de', 'adfilter-adl', 'mullvad-doh', 'doh-cleanbrowsing-security']
     log_files_max_age = 1 # max 1 day
     listen_addresses = ['127.0.0.1:53','[::]:53']
     ipv6_servers = true
