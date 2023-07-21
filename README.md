@@ -133,7 +133,9 @@ You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config pa
 
     ui.key.menuAccessKeyFocuses = false 
     
-You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue. 
+You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue.
+
+### Dnscrypt-proxy
 
 ## TIPS
 # Pacman and yay
