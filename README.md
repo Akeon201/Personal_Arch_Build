@@ -136,6 +136,32 @@ You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config pa
 You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue.
 
 ### Dnscrypt-proxy
+    log_files_max_age = 1 # max 1 day
+    listen_addresses = ['127.0.0.1:53','[::]:53']
+    ipv6_servers = true
+    
+    # Use servers implementing the DNSCrypt protocol
+    dnscrypt_servers = false
+
+    # Use servers implementing the DNS-over-HTTPS protocol
+    doh_servers = true
+    
+    # Server must support DNS security extensions (DNSSEC)
+    require_dnssec = true
+
+    # Uncomment the following line to route all TCP connections to a local Tor node
+    # Tor doesn't support UDP, so set `force_tcp` to `true` as well.
+
+    proxy = 'socks5://127.0.0.1:9050'
+    force_tcp = true
+
+    netprobe_timeout = -1
+    ignore_system_dns = true
+    bootstrap_resolvers = ['9.9.9.11:53', '1.1.1.1:53']
+
+    # How long to keep backup files, in days
+    log_files_max_age = 1
+    
 
 ## TIPS
 # Pacman and yay
