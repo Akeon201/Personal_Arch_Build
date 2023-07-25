@@ -133,6 +133,12 @@ https://aur.archlinux.org/dropbox.git
 yay -S dropbox
 ```
 
+### Git
+Account management for git
+```shell
+gh auth login
+```
+
 ### Tor broswer
 https://aur.archlinux.org/tor-browser.git
 ```shell
