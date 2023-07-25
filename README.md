@@ -191,7 +191,11 @@ You can open the about:config page via the location/address bar. You can accept 
 
     # How long to keep backup files, in days
     log_files_max_age = 1
-    
+
+    # NETWORKMANAGER CONFIGURATION
+    Open /etc/NetworkManager/NetworkManager.conf
+    dns=none
+    rc-manager=unmanaged
 
 ## TIPS
 # Pacman and yay
