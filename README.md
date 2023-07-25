@@ -5,6 +5,29 @@
 archinstall --script guided
 ```
 
+## Subvolumes
+One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp are created to disable Copy on Write on /var/log and /tmp.
+```shell
+/mnt/@
+/mnt/@home
+/mnt/@tmp
+/mnt/@log
+/mnt/@pkg
+/mnt/@docker
+/mnt/.@snapshots
+```
+
+## Subvolume Locations
+```shell
+/mnt  
+/mnt/home
+/mnt/tmp
+/mnt/var/log
+/mnt/var/cache/pacman/pkg/
+/mnt/var/lib/docker
+/mnt/.snapshots
+```
+
 ## Post Installation
 ### Packages
 ```shell
