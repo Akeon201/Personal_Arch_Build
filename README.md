@@ -197,6 +197,8 @@ You can open the about:config page via the location/address bar. You can accept 
     dns=none
     rc-manager=unmanaged
 
+    delete /etc/resolv.conf dns entries
+
 ## TIPS
 # Pacman and yay
 ```shell
