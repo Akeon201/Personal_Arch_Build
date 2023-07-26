@@ -158,8 +158,11 @@ sudo pacman -S fish
 ```
 
 ### Timeshift
+Configure in the gui
 ```shell
 yay -S timeshift
+systemctl enable cronie.service
+systemctl start cronie.service
 ```
 
 ### Firefox alt key fix
