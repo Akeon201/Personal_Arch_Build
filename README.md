@@ -157,6 +157,11 @@ Better terminal. Keep scripting to bash.
 sudo pacman -S fish
 ```
 
+### Timeshift
+```shell
+yay -S timeshift
+```
+
 ### Firefox alt key fix
 You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config page to prevent opening the menu when holding down the Alt key. This may require to close and restart Firefox.
 
