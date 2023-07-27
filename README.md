@@ -158,9 +158,10 @@ sudo pacman -S fish
 ```
 
 ### Timeshift
-Configure in the gui
+Configure in the gui. Auto snapshots may or may not work.
 ```shell
 yay -S timeshift
+# Following may or may not work. Broken on my arch install.
 systemctl enable cronie.service
 systemctl start cronie.service
 ```
@@ -240,3 +241,18 @@ ip
 # show active ports
 ss
 ```
+
+# Timeshift
+If you encounter an error:
+```shell
+BTRFS error (device XXX): subvol'/@home' does not match subvolid XXX
+```
+You can find the new @home id with:
+```shell
+btrfs subvolume list /
+```
+Edit the subvolid at:
+```shell
+/etc/fstab
+```
+If still not working, try deleting the subvolid variable.
