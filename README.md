@@ -242,10 +242,11 @@ ss
 ```
 
 # BTRFS
-Potential options to add/remove from subvolumes.
-You can switch out relatime for noatime. Disables updating access time to files.
-Adding nodatacow to disable copy-on-write for data. May benefit tmp and log.
+The following are options you can add/remove.
+You can switch out relatime for noatime to disable updating access time to files.
+Adding nodatacow will disable copy-on-write for data (may benefit tmp and log).
 Check ssd for compatibility but add *discard* if possible.
+Archinstall does not auto add the *discard* option so don't forget to add it if compatible.
 ```shell
 # Examples
 /home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
