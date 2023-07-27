@@ -35,8 +35,8 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 ## Post Installation
 ### Packages
 ```shell
-sudo pacman -Syu
 sudo pacman -Syy
+sudo pacman -Syu
 sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli
 ```
 
