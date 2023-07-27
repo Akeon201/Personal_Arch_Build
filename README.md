@@ -44,8 +44,7 @@ sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp 
 The following are options you can add/remove.
 You can switch out relatime for noatime to disable updating access time to files.
 Adding nodatacow will disable copy-on-write for data (may benefit tmp and log).
-Check ssd for compatibility but add *discard* if possible.
-Archinstall does not auto add the *discard* option so don't forget to add it if compatible.
+Consider discard if you do not activate fstrim.timer (fstrim is 3 topics down). Discard might affect system performance, fstrim is recommended.
 ```shell
 # Examples
 /home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
