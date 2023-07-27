@@ -190,10 +190,11 @@ You can open the about:config page via the location/address bar. You can accept 
 
 ### NetworkManager MAC configuration
 For randomizing mac address.
+    
     [device-mac-randomization]
     # "yes" is already the default for scanning
     wifi.scan-rand-mac-address=yes
- 
+    
     [connection-mac-randomization]
     # OPTIONS - random, stable
     # Stable means a random mac address will be generated and saved per connection.
