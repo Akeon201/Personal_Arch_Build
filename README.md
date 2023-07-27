@@ -241,6 +241,17 @@ ip
 ss
 ```
 
+# BTRFS
+Potential options to add/remove from subvolumes.
+You can switch out relatime for noatime. Disables updating access time to files.
+Adding nodatacow to disable copy-on-write for data. May benefit tmp and log.
+Check ssd for compatibility but add *discard* if possible.
+```shell
+# Examples
+/home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
+/tmp            btrfs           rw,compress=zstd,relatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp
+```
+
 # Timeshift
 If you encounter an error:
 ```shell
