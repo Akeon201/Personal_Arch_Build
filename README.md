@@ -188,6 +188,20 @@ You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config pa
     
 You can open the about:config page via the location/address bar. You can accept the warning and click "I accept the risk!" to continue.
 
+### NetworkManager MAC configuration
+For randomizing mac address.
+    [device-mac-randomization]
+    # "yes" is already the default for scanning
+    wifi.scan-rand-mac-address=yes
+ 
+    [connection-mac-randomization]
+    # OPTIONS - random, stable
+    # Stable means a random mac address will be generated and saved per connection.
+    # Randomize MAC for every ethernet connection
+    ethernet.cloned-mac-address=random
+    # Generate a random MAC for each WiFi and associate the two permanently.
+    wifi.cloned-mac-address=random
+
 ### Dnscrypt-proxy
     server_names = ['ahadns-doh-nl', 'adguard-dns-doh', 'controld-block-malware', 'dnsforge.de', 'adfilter-adl', 'mullvad-doh', 'doh-cleanbrowsing-security']
     log_files_max_age = 1 # max 1 day
