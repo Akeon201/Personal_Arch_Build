@@ -28,12 +28,26 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 /mnt/.snapshots
 ```
 
+
+
 ## Post Installation
 ### Packages
 ```shell
 sudo pacman -Syu
 sudo pacman -Syy
 sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli
+```
+
+# BTRFS
+The following are options you can add/remove.
+You can switch out relatime for noatime to disable updating access time to files.
+Adding nodatacow will disable copy-on-write for data (may benefit tmp and log).
+Check ssd for compatibility but add *discard* if possible.
+Archinstall does not auto add the *discard* option so don't forget to add it if compatible.
+```shell
+# Examples
+/home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
+/tmp            btrfs           rw,compress=zstd,relatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp
 ```
 
 ### Pacman
@@ -207,6 +221,8 @@ You can open the about:config page via the location/address bar. You can accept 
     proxy = 'socks5://127.0.0.1:9050'
     force_tcp = true
 
+
+
 ## TIPS
 # Pacman and yay
 ```shell
@@ -239,18 +255,6 @@ ip
 
 # show active ports
 ss
-```
-
-# BTRFS
-The following are options you can add/remove.
-You can switch out relatime for noatime to disable updating access time to files.
-Adding nodatacow will disable copy-on-write for data (may benefit tmp and log).
-Check ssd for compatibility but add *discard* if possible.
-Archinstall does not auto add the *discard* option so don't forget to add it if compatible.
-```shell
-# Examples
-/home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
-/tmp            btrfs           rw,compress=zstd,relatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp
 ```
 
 # Timeshift
