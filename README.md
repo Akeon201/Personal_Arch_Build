@@ -176,7 +176,7 @@ You can open the about:config page via the location/address bar. You can accept 
 ### Dnscrypt-proxy
     server_names = ['ahadns-doh-nl', 'adguard-dns-doh', 'controld-block-malware', 'dnsforge.de', 'adfilter-adl', 'mullvad-doh', 'doh-cleanbrowsing-security']
     log_files_max_age = 1 # max 1 day
-    listen_addresses = ['127.0.0.1:53','[::]:53']
+    listen_addresses = ['127.0.0.1:53']
     ipv6_servers = true
     
     # Use servers implementing the DNSCrypt protocol
@@ -188,12 +188,6 @@ You can open the about:config page via the location/address bar. You can accept 
     # Server must support DNS security extensions (DNSSEC)
     require_dnssec = true
 
-    # Uncomment the following line to route all TCP connections to a local Tor node
-    # Tor doesn't support UDP, so set `force_tcp` to `true` as well.
-
-    proxy = 'socks5://127.0.0.1:9050'
-    force_tcp = true
-
     netprobe_timeout = -1
     ignore_system_dns = true
     bootstrap_resolvers = ['9.9.9.11:53', '1.1.1.1:53']
@@ -201,12 +195,17 @@ You can open the about:config page via the location/address bar. You can accept 
     # How long to keep backup files, in days
     log_files_max_age = 1
 
-    # NETWORKMANAGER CONFIGURATION
+    # NETWORKMANAGER CONFIGURATION - Non optional if you installed with Archinstall guided installation
     Open /etc/NetworkManager/NetworkManager.conf
     dns=none
     rc-manager=unmanaged
-
     delete /etc/resolv.conf dns entries
+
+    # OPTIONAL
+    # Uncomment the following line to route all TCP connections to a local Tor node
+    # Tor doesn't support UDP, so set `force_tcp` to `true` as well.
+    proxy = 'socks5://127.0.0.1:9050'
+    force_tcp = true
 
 ## TIPS
 # Pacman and yay
