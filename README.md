@@ -30,7 +30,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 
 
 
-## Post Installation
+# Post Installation
 ### Packages
 ```shell
 sudo pacman -Syu
@@ -38,7 +38,7 @@ sudo pacman -Syy
 sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli
 ```
 
-# BTRFS
+### BTRFS
 The following are options you can add/remove.
 You can switch out relatime for noatime to disable updating access time to files.
 Adding nodatacow will disable copy-on-write for data (may benefit tmp and log).
