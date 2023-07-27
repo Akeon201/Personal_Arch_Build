@@ -1,11 +1,13 @@
 # Personal Arch Install
 
-## Arch iso guided installation
+## Installation
+
+### Arch iso guided installation
 ```shell
 archinstall --script guided
 ```
 
-## Subvolumes
+### Subvolumes
 One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp are created to disable Copy on Write on /var/log and /tmp.
 ```shell
 /mnt/@
@@ -17,7 +19,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 /mnt/.@snapshots
 ```
 
-## Subvolume Locations
+### Subvolume Locations
 ```shell
 /mnt  
 /mnt/home
@@ -30,7 +32,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 
 
 
-# Post Installation
+## Post Installation
 ### Packages
 ```shell
 sudo pacman -Syu
@@ -224,7 +226,7 @@ You can open the about:config page via the location/address bar. You can accept 
 
 
 ## TIPS
-# Pacman and yay
+### Pacman and yay
 ```shell
 # remove package
 sudo pacman -Rsun <package>
@@ -242,13 +244,13 @@ sudo pacman -Syu
 yay -S <package>
 ```
 
-# Archives
+## Archives
 ```shell
 # extract archive
 tar -xvf <filename>.tar.bz2
 ```
 
-# Ip and ports
+## Ip and ports
 ```shell
 # show ip
 ip
@@ -257,7 +259,7 @@ ip
 ss
 ```
 
-# Timeshift
+## Timeshift
 If you encounter an error:
 ```shell
 BTRFS error (device XXX): subvol'/@home' does not match subvolid XXX
