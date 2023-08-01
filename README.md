@@ -50,9 +50,22 @@ Consider discard if you do not activate fstrim.timer (fstrim is 3 topics down). 
 /home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
 /tmp            btrfs           rw,compress=zstd,relatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp
 ```
+
 List subvolumes
 
     sudo btrfs subvolume list /
+
+### Secure Boot
+Use sbctl to save time. Pacman hook auto setup for convenience.
+
+    sbctl status
+    sbctl create-keys
+    sbctl enroll-keys -m
+    sbctl sign -s /boot/EFI/BOOT/BOOTX64.EFI
+    sbctl sign -s /boot/vmlinuz-linux
+    sbctl sign -s -o /usr/lib/systemd/boot/efi/systemd-bootx64.efi.signed /usr/lib/systemd/boot/efi/systemd-bootx64.efi
+    sbctl status
+    sbctl verify
 
 ### Pacman
 Parallel downloads, colors
