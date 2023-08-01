@@ -50,6 +50,9 @@ Consider discard if you do not activate fstrim.timer (fstrim is 3 topics down). 
 /home           btrfs           rw,relatime,discard,ssd,space_cache=v2,subvolid=272,subvol=/@home
 /tmp            btrfs           rw,compress=zstd,relatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp
 ```
+List subvolumes
+
+    sudo btrfs subvolume list /
 
 ### Pacman
 Parallel downloads, colors
@@ -180,6 +183,9 @@ yay -S timeshift
 systemctl enable cronie.service
 systemctl start cronie.service
 ```
+Problem deleting entries or snapshots not listed?
+    
+    sudo btrfs subvolume delete --subvolid XXX /
 
 ### Firefox alt key fix
 You can set the ui.key.menuAccessKeyFocuses pref to false on the about:config page to prevent opening the menu when holding down the Alt key. This may require to close and restart Firefox.
