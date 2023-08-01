@@ -37,7 +37,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 ```shell
 sudo pacman -Syy
 sudo pacman -Syu
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli man-pages man-db
 ```
 
 ### BTRFS
