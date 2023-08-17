@@ -37,7 +37,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 ```shell
 sudo pacman -Syy
 sudo pacman -Syu
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli man-pages man-db
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli man-pages man-db cups
 ```
 
 ### BTRFS
@@ -255,6 +255,9 @@ For randomizing mac address.
     # Tor doesn't support UDP, so set `force_tcp` to `true` as well.
     proxy = 'socks5://127.0.0.1:9050'
     force_tcp = true
+
+### cups
+    ipp://XXX.XXX.XXX.XXX/ipp/port1
 
 
 
