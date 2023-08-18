@@ -280,6 +280,24 @@ sudo pacman -Syu
 yay -S <package>
 ```
 
+## Plasma Settings
+ChatGPT - Alt+F
+Spectacle - Alt+S
+Discord - Alt+D
+Dolphin - Alt+E
+Firefox - Alt+M
+Kill Window - Alt+`
+Maximize Window - Alt+P
+Toggle Overview - Alt+W
+Fish - Alt+Q
+Krunner - Alt+A
+System Monitor - Alt+L
+VS code - Alt+/
+Close Window - Alt+Esc
+Quick Tile Window to Left/Right/Top - Alt+< / Alt+> / Alt+^
+Switch to Desktop 1/2/3/4 - Alt+Home / Alt+PgUp / Alt+PgDown / Alt+End
+
+
 ## Archives
 ```shell
 # extract archive
