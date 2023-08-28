@@ -248,7 +248,7 @@ For randomizing mac address.
     Open /etc/NetworkManager/NetworkManager.conf
     dns=none
     rc-manager=unmanaged
-    delete /etc/resolv.conf dns entries
+    comment out /etc/resolv.conf dns entries
 
     # OPTIONAL
     # Uncomment the following line to route all TCP connections to a local Tor node
