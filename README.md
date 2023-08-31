@@ -37,7 +37,7 @@ One subvolume for root (@) and one for snapshots (.@snapshots). Varlog and tmp a
 ```shell
 sudo pacman -Syy
 sudo pacman -Syu
-sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli man-pages man-db cups
+sudo pacman -S git reflector ufw neofetch discord firefox-developer-edition tlp discord pacman-contrib openssh telegram-desktop zip unzip fish thunderbird gwenview kwalletmanager dnscrypt-proxy docker github-cli man-pages man-db cups virt-manager qemu-desktop dnsmasq iptables-nft
 ```
 
 ### BTRFS
@@ -157,6 +157,13 @@ https://aur.archlinux.org/visual-studio-code-bin.git
 ```shell
 yay -S visual-studio-code-bin
 ```
+
+### KVM w/ Virt Manager
+    systemctl enable libvirtd.socket
+    systemctl start libvirtd.socket
+    usermod -a $USER -G libvirt-qemu
+    virsh net-start default
+    virsh net-autostart default
 
 ### Dropbox
 https://aur.archlinux.org/dropbox.git
