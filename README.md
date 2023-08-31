@@ -159,6 +159,8 @@ yay -S visual-studio-code-bin
 ```
 
 ### KVM w/ Virt Manager
+In preferences, under console, set Grab key to Right Control
+
     systemctl enable libvirtd.socket
     systemctl start libvirtd.socket
     usermod -a $USER -G libvirt-qemu
@@ -294,6 +296,7 @@ yay -S <package>
     Dolphin - Alt+E
     Firefox - Alt+M
     Kill Window - Alt+`
+    Virtual Machine Manager - Alt+\
     Maximize Window - Alt+P
     Toggle Overview - Alt+W
     Fish - Alt+Q
