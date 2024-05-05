@@ -1,5 +1,7 @@
 # Personal Arch Install
 
+This is for my own personal arch build. This serves as a guide to get my laptop up and running quickly in case I need to reinstall arch.
+
 ## Installation
 
 ### Arch iso guided installation
